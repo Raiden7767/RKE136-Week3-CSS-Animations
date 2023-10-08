@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9abf0bc16f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/poster.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Task</title>
 </head>
 <body>
@@ -20,7 +20,15 @@
                 <span class="movie-duration">2h 23m</span>
             </p>
             <div class="movie-poster-container">
-                <img src="images/transformers.jpg" alt="Transformers Poster">
+                <img src="images/transformers.jpg" alt="Transformers Poster" class="movie-poster">
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn">&times;</span>
+                        <img src="images/transformers.jpg" alt="" class="movie-poster-modal">
+                        <h1>Transformers!</h1>
+                    </div>
+                </div>
             </div>
 
             <div class="movie-info-container">
@@ -40,7 +48,7 @@
                 </div>
             </div>
         </div>
-
+        
         <footer>
             <h3>Find me to discuss the movie</h3>
              
@@ -54,8 +62,9 @@
     
         </footer>
 
+        <script src="scripts/app.js"></script>
 
-    </div>
+
     
 </body>
 </html>
